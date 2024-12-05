@@ -34,6 +34,14 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <!-- Add Jetty repository for jetty-runner -->
+        <repository>
+            <id>jetty-repo</id>
+            <url>https://repo.eclipse.org/content/groups/jetty/</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <!-- Maven Dependency Plugin for copying Jetty Runner -->
@@ -53,7 +61,7 @@
                                 <artifactItem>
                                     <groupId>org.eclipse.jetty</groupId>
                                     <artifactId>jetty-runner</artifactId>
-                                    <version>9.4.51.v20231003</version>
+                                    <version>9.4.27.v20200227</version>
                                     <destFileName>jetty-runner.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
